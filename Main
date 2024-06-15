@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Declare variables
+        double x; // side - user input
+        double y; // side - user input
+        double z; // calculation - store the calculations of x and y
+
+        // declare, assign, and initialize the scanner for user input
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter side x: "); // prompts user for side x value
+        x = scanner.nextDouble(); // accepts user input of double stored as value x
+        System.out.println("Enter side y: "); // prompts user for side y value
+        y = scanner.nextDouble(); // accepts user input of double stored as value y
+
+        // find the hypotenuse
+        z = Math.sqrt((x*x) + (y*y));
+
+        //Display the hypotenuse
+        System.out.println("The hypotenuse is: " + z);
+
+        scanner.close();
+    }
+}
